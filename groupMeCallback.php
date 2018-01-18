@@ -39,8 +39,8 @@ if ( substr( $command[ 0 ], 0, 1 ) == ":" ){
     }
 
 // And this is the ugly syntax for checking for keywords in messages. I don't like it, but I don't know a better way
-} else if ( substr_count( $msgText, "(.)(.)" ) > 0 ){
-    sendMsg( "BOOBIES" );
+} else if ( substr_count( $msgText, "!hello" ) > 0 ){
+    sendMsg( "hello" );
 // Here's the same thing, but with a case-sensitive keyword
 } else if ( substr_count( $msgText, "Oblivion!" ) > 0 ){
     sendMsg( "ONLY A DAEDRIC LORD MAY COMMAND THE PLANES OF OBLIVION. GO AWAY." );
